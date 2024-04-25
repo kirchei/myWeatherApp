@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="Stylesheet" href="styles.css">
+    <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <form>
+            <input type="text" id="name" autocomplete="off" placeholder="Name of City">
+            <button>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </form>
+
+        <section class="result">
+
+            <figure class="name">
+                <figcaption>Imus City</figcaption>
+                <img src="https://flagsapi.com/PH/flat/32.png
+                " alt="">
+            </figure>
+            <figure class="temperature">
+                <img src="https://openweathermap.org/img/wn/10d@4x.png" alt="weather">
+                <figcaption>
+                    <span>31</span>
+                    °C
+                </figcaption>
+            </figure>
+            <p class="description">Feels like <span id="feelsLike">30</span>°C, Overcast clouds</p>
+            <ul>
+                <li>
+                    <span>Clouds</span>
+                    <i class="fa-solid fa-cloud" id="cloudIcon"></i>
+                    <span id="clouds">98</span>%
+                </li>
+                <li>
+                    <span>Humidity</span>
+                    <i class="fa-solid fa-droplet" id="dropletIcon"></i>
+                    <span id="humidity">55</span>%
+                </li>
+                <li>
+                    <span>Pressure</span>
+                    <i class="fa-solid fa-gauge" id="gaugeIcon"></i>
+                    <span id="pressure">1001</span>hPa
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+
+</html>

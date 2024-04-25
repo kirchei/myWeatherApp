@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,
+            #dcdcdc 50%,
+            #e9e9e9 50%);
+}
+
+main {
+    width: 300px;
+    height: max-content;
+    min-height: 300px;
+    background-color: #f7f7f7;
+    border-radius: 30px;
+    box-shadow: 0 30px 50px #333;
+    padding: 30px;
+}
+
+main form {
+    border: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+
+main form input,
+main form button {
+    border: none;
+    background: transparent;
+    
+}
+
+input[type="text"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    outline: none;
+    padding: 10px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    width: 99%;
+  }
+
+button {
+    overflow: hidden;
+    width: 3rem;
+    padding: 0;
+    margin: 0;
+    border: 1px solid transparent;
+    border-radius: inherit;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+main form i {
+    opacity: 0.7;
+}
+
+main .result {
+    padding-top: 20px;
+    text-align: center;
+}
+
+main .result .name {
+    font-weight: bold;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+main .temperature img {
+    width: 150px;
+    filter: drop-shadow(0 10px 50px #555);
+}
+
+main .temperature figcaption {
+    font-size: 3em;
+}
+
+main .description {
+    padding: 10px 0 30px;
+}
+
+main ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+main li {
+    background-color: #f78a55;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 10px;
+    background-image: linear-gradient(to bottom,
+            transparent 50%,
+            #0003 50%);
+    font-weight: bold;
+    font-size: small;
+}
+
+main ul li i {
+    font-size: 2em;
+    margin: 20px 0;
+}
+
+#cloudIcon,
+#dropletIcon,
+#gaugeIcon {
+    display: block;
+}
+
+main li:nth-child(2) {
+    background-color: #b56291;
+}
+
+main li:nth-child(3) {
+    background-color: #48567b;
+}
+
+main.error {
+    animation: errorEffect 0.3s linear 1;
+}
+
+@keyframes errorEffect {
+    0% {
+        transform: translate(10px, 5px)
+    }
+
+    25% {
+        transform: translate(-5px, 0)
+    }
+
+    50% {
+        transform: translate(8px, 2px)
+    }
+
+    75% {
+        transform: translate(-2px, 5px)
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
